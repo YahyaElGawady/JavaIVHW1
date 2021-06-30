@@ -37,17 +37,17 @@ public class Homework1 {
 		//creates a new array that is one longer that original array
 		int[] newArray = new int[array.length + 1];		//O(1)
 		//iterates through all elements before goal index and copies them to new array
-		for (int i = 0; i < index; i++) {				//O(n)
+		for (int i = 0; i < index; i++) {			//O(n)
 			//copies element
-			newArray[i] = array[i];						//O(1)
+			newArray[i] = array[i];				//O(1)
 		}
 		//adds the desired element at proper index
-		newArray[index] = value;						//O(1)
+		newArray[index] = value;				//O(1)
 		//copies rest of the array to new array but one further because of the new element
 		for(int i = index; i < array.length; i++) {		//O(n) 
-			newArray[i + 1] = array[i];					//O(1)
+			newArray[i + 1] = array[i];			//O(1)
 		}
 		//returns new array
-		return newArray; 								//O(1)
+		return newArray; 					//O(1)
 	}
 }
